@@ -1,0 +1,1154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-financials.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="financialbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#" class="currnt"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#" class="selected">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container"> 
+    <!-- financials blocks-->
+    <div class="row padng-lefnone">
+      <div class="col-md-7 col-sm-7 col-xs-12 padng-lefnone finclr mrgtp5p">OPERATING STATEMENT</div>
+      <div class="col-md-5 col-sm-5 col-xs-12 finclr form-horizontal">
+        <div class="form-group form-group-sm">
+          <div class="pull-right">
+            <label class="control-label pull-left">Values : &nbsp;</label>
+            <select class="form-control form-control-auto pull-left">
+              <option>Total SqFt</option>
+            </select>
+            <a href="#" data-toggle="dropdown" class="exprt">Export</a>
+            <ul class="dropdown-menu exprt-list">
+              <li><a href="#"><img src="images/excelicon.png" alt=""/> Excel</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 pdng7p">
+        <div class="row mrgsidenone bg8c66">
+          <div class="col-md-12 finoptpsec padsidenone">
+            <div>NET OPERATING INCOME</div>
+          </div>
+          <div class="col-md-6 col-sm-6 finoptlefrow pdng7p">
+            <div class="text-center"><span class="finclr">ACTUAL: &nbsp;$ 1,933,481</span></div>
+            <div class="text-center"><span class="finclr">BUDGET: &nbsp;$ 1,624,199</span></div>
+            <div class="text-center"><span class="finclr">VARIANCE: &nbsp;$ 309,281</span></div>
+          </div>
+          <div class="col-md-6 col-sm-6 pdng7p">
+            <div class="text-center opstgraph">
+              <div class="divcenteralgn"><img src="images/finopstgraph.png" alt="" class="img-responsive mrgtp15p"/></div>
+              <div class="pull-right mrgtp30p"><img src="images/opst-green-arw-up.png" alt="" class="mrgt10p"/><img src="images/opst-red-arw-up.png" alt="" class="mrgt10p"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- financials blocks--> 
+    <!-- financials table-->
+    <div class="row mrgtp30p opstblscrol mrgsidenone-xs">
+      <div class="col-md-12 col-sm-12 col-xs-12 tabalgngen opstrowhgt opst-tabl">
+        <div class="row mrgsidenone">
+          <div class="col-md-12 col-sm-12 col-xs-12 purp-titlebg purp-bgrad padbtnone">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7 mrgsidenone padbtnone">
+                <div class="col-md-6 col-sm-6 col-xs-6 form-horizontal">
+                  <div class="form-group form-group-sm mrglfnone mrgtp5p">
+                    <select class="form-control form-control-auto mrgt10p">
+                      <option>YTD</option>
+                    </select>
+                    <span class="fnt10 txtupr">Jan to Jun</span></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="pull-rightresp">
+                    <div class="varlab">Variance :</div>
+                    <div class="vardv">
+                      <div id="slider1" class="fintotsf-wrp">&nbsp;</div>
+                      <br>
+                      $ >=
+                      <input id="input1" value="0" class="draginpt" />
+                    </div>
+                    <div class="vardv">
+                      <div id="slider2" class="fintotsf-wrp">&nbsp;</div>
+                      <br>
+                      % >=
+                      <input id="input2" value="0" class="draginpt" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 bgfff" style="width: 30px;">&nbsp;</div>
+              <div class="col-md-4 col-sm-4 col-xs-4 mrgsidenone padbtnone form-horizontal">
+                <div class="form-group form-group-sm mrglfnone mrgtp5p">
+                  <select class="form-control form-control-auto mrgt15p">
+                    <option>Month</option>
+                  </select>
+                  <select class="form-control form-control-auto mrgt15p">
+                    <option>JUNE</option>
+                  </select>
+                  <select class="form-control form-control-auto">
+                    <option>2014</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mrgsidenone">
+          <div class="col-md-7 col-sm-7 col-xs-7 finopstdv">Operating Statement Summary</div>
+          <div class="col-md-1 col-sm-1 col-xs-1 opst-separater" style="width: 30px;">&nbsp;</div>
+          <div class="col-md-4 col-sm-4 col-xs-4 finopstdv">&nbsp;</div>
+        </div>
+        <div class="row mrgsidenone opstblrow">
+          <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12">
+            <div class="row text-center padtpbt10p opsthdrow">
+              <div class="col-md-3 col-sm-3 col-xs-3">Items</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Actual $ </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Budget $</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">$</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Variance ?</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Actual $ </div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Budget $</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">$</div>
+              <div class="col-md-1 col-sm-1 col-xs-1">Variance ?</div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 bgef">
+            <div class="row text-center">
+              <div class="col-md-3 col-sm-3 col-xs-3 opstbgarw text-left trendanyl padtpbt10p">
+                <div class="wdt130p pull-left finaclr"><a href="javascript:void(0)" class="opstparent">Income Detail</a></div>
+                <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 bgef">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7 mrgtpbt12p">
+                <div class="finopstcmnt">
+                  <p class="lnkdisphovr">YTD favorable variance from received deposits &amp; previous<br>
+                    month rent from tenants.</p>
+                  <p class="pull-right lnkdispno finaclr"><a href="#" class="editanbg brdno">Edit</a> <a href="#"  class="deleteanbg brdno">Delete</a> <a href="#" class="comtchatanbg">Comments 0</a></p>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 opst-separater hgtmore">&nbsp;</div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="finopstcmnt mrgtpbt12p">
+                  <p class="lnkdisphovr">YTD favorable variance from received deposits &amp; previous<br>
+                    month rent from tenants.</p>
+                  <p class="pull-right lnkdispno finaclr"><a href="#" class="editanbg brdno">Edit</a> <a href="#"  class="deleteanbg brdno">Delete</a> <a href="#" class="comtchatanbg">Comments 0</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">&nbsp;</div>
+          <div class="hierarchy">
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Escalations/ Expense Recovery</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" data-toggle="modal" data-target="#edit" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover bgef">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Operating Expense Recovery</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr bgef">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-subin text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#" data-toggle="modal" data-target="#detail">Other Operating Income</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="modal fade" id="detail" tabindex="-1">
+                  <div class="modal-dialog cust-modaldialog ">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close modal-closebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title finclrim" id="myModalLabel">412700 - Alt Rev-Adv/Sponsors</h4>
+                      </div>
+                      <div class="modal-body mrgbt25p fnt6c">
+                        <div class="table-responsive brdno">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="finclr"><span class="finclr">Post Date</span></th>
+                                <th><span class="finclr">Description</span></th>
+                                <th><span class="finclr">Notes/Remarks</span></th>
+                                <th><span class="finclr">Debits $</span></th>
+                                <th><span class="finclr">Credit $</span></th>
+                                <th><span class="finclr">Balance $</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="gry">
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><span class="fntfff">==Beginning Balance==</span></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="text-right"><span class="fntfff"><strong>0</strong></span></td>
+                              </tr>
+                              <tr class="text-right">
+                                <td class="text-left">11/01/14</td>
+                                <td>&nbsp;</td>
+                                <td class="text-left">Un-claimed Security Deposit - <br>
+                                  Reclass to misc income</td>
+                                <td>0</td>
+                                <td>49,746</td>
+                                <td>-49,746</td>
+                              </tr>
+                              <tr class="text-right">
+                                <td class="text-left">11/01/14</td>
+                                <td>&nbsp;</td>
+                                <td class="text-left">Un-claimed Security Deposit - <br>
+                                  Reclass to misc income</td>
+                                <td>0</td>
+                                <td>49,746</td>
+                                <td>-49,746</td>
+                              </tr>
+                              <tr class="gry">
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><span class="fntfff">==Ending Balance==</span></td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="text-right"><span class="fntfff"><strong>-99,492</strong></span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="modal-footer">&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover bgef">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Rent</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;13%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr bgef">
+              <div class="row">
+                <div class="col-md-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Recoverable Expenses Detail</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-up.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-up.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover bgef">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Escalations/ Expense Recovery</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr bgef">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 opstbgarw-whte">
+            <div class="row text-center fntfff">
+              <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                <div class="wdt130p pull-left"><a href="javascript:void(0)" class="opstparent"><span class="fntfff">Net Operating Income</span></a></div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img src="images/green-arw-dw.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+            </div>
+          </div>
+          <div class="row">&nbsp;</div>
+          <div class="hierarchy">
+            <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 finopst-hover">
+              <div class="row text-center">
+                <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                  <div class="wdt130p pull-left finaclr"><a href="#">Debt Service Detail</a></div>
+                  <div class="dispno pull-right"> <a href="#"><img src="images/trends.png" alt=""/></a> <a href="#"><img src="images/icon-analysis.png" alt=""/></a> </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img width="9" height="9" alt="" src="images/green-arw-up.png"> &nbsp;13%</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                  <div class="alm-sclr-wrpgry">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                </div>
+                <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clrgreen"><img width="9" height="9" alt="" src="images/green-arw-up.png"> &nbsp;13%</div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 finopst-dispno finaclr">
+              <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+                <div class="col-md-1 col-sm-1 col-xs-1 opst-separater">&nbsp;</div>
+                <div class="col-md-4 col-sm-4 col-xs-4"><a class="addpurp" href="#"><span class="fnt11">Add Explanation</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 fnt6c fnt12 opstbgarw-whte">
+            <div class="row text-center fntfff">
+              <div class="col-md-3 col-sm-3 col-xs-3 padtpbt10p opstbgarw-sub text-left trendanyl">
+                <div class="wdt130p pull-left">Depreciation &amp; Amortization Detail</div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img src="images/red-arw-up.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p opst-separater">&nbsp;</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,221,837</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">3,688,412</div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p">
+                <div class="alm-sclr-wrpgry">
+                  <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 padtpbt10p clred"><img src="images/red-arw-up.png" width="9" height="9" alt=""/> &nbsp;38%</div>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12 bgef">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7 mrgtpbt12p">
+                <div class="finopstcmnt">
+                  <p class="lnkdisphovr">YTD favorable variance from received deposits &amp; previous<br>
+                    month rent from tenants.</p>
+                  <p class="pull-right lnkdispno finaclr"><a href="#" class="editanbg brdno">Edit</a> <a href="#"  class="deleteanbg brdno">Delete</a> <a href="#" class="comtchatanbg">Comments 0</a></p>
+                </div>
+              </div>
+              <div class="col-md-1 col-sm-1 col-xs-1 opst-separater hgtmore">&nbsp;</div>
+              <div class="col-md-4 col-sm-4 col-xs-4 mrgtpbt12p">
+                <div class="finopstcmnt">
+                  <p class="lnkdisphovr">YTD favorable variance from received deposits &amp; previous<br>
+                    month rent from tenants.</p>
+                  <p class="pull-right lnkdispno finaclr"><a href="#" class="editanbg brdno">Edit</a> <a href="#"  class="deleteanbg brdno">Delete</a> <a href="#" class="comtchatanbg">Comments 0</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- financials table--> 
+  </div>
+</div>
+<div class="modal fade" id="edit" tabindex="-1">
+  <div class="modal-dialog cust-modaldialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close modal-closebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title finclrim" id="myModalLabel">Explanation</h4>
+      </div>
+      <div class="modal-body mrgbt25p fnt6c">
+        <div class="table-responsive brdno">
+          <table class="table">
+            <thead>
+              <tr>
+                <th><span class="finclr">Items</span></th>
+                <th><span class="finclr">Actual ($)</span></th>
+                <th><span class="finclr">Budget ($)</span></th>
+                <th><span class="pull-left finclr">$</span> <span class="pull-right finclr">Variance?</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-right">
+                <td class="text-left">Income Detail</td>
+                <td>3,221,837</td>
+                <td>3,688,412</td>
+                <td><div class="alm-sclr-wrpgry pull-left minwdt100p">
+                    <div class="alm-sclr-in alm-bgred clrblk"><span>466,575</span></div>
+                  </div>
+                  <span class="clred pull-right"><img width="9" height="9" alt="" src="images/red-arw-dw.png"> &nbsp;2 %</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mrgsidenone mrgtp15p fnt12">
+          <div class="panel panel-default mrgbtnone padtpnone">
+            <div class="panel-body">
+              <div class="row mrgsidenone">
+                <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                <div class="col-md-9 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                  <textarea rows="1" draggable="false">YTD favorable variance from received deposits and previous month rent from tenants.</textarea>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                  <input type="button" value="SAVE" class="orngbtn finbtn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mrgsidenone mrgtp15p fin-pocmnt fnt12">
+          <div class="panel panel-default mrgbtnone padtpnone">
+            <div class="panel-heading">Comments</div>
+            <div class="panel-body">
+              <div class="row mrgsidenone">
+                <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                <div class="col-md-9 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                  <textarea rows="1" draggable="false"></textarea>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                  <input type="button" value="COMMENT" class="orngbtn finbtn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mrgsidenone mrgtp15p fnt12">
+          <div class="panel panel-default mrgbtnone bgef">
+            <div class="panel-body">
+              <div class="row mrgsidenone">
+                <div class="col-md-1 col-sm-1 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                <div class="col-md-11 col-sm-11 padsdnonrsp-xs"> <span class="clrblue"><strong>You</strong></span> Arvind says fine <br>
+                  <span class="text-muted">Aug 01, 2014 at 03:31 PM</span>
+                  <div class="pull-right"> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="blu-tooltip editlnk"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip"  data-placement="bottom" title="Delete" class="blu-tooltip deletelnk"><img src="images/delete.png" alt=""/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mrgsidenone mrgtp15p fnt12">
+          <div class="panel panel-default mrgbtnone padtpnone">
+            <div class="panel-body">
+              <div class="row mrgsidenone">
+                <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                <div class="col-md-9 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                  <textarea rows="1" draggable="false">Arvind says fine </textarea>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                  <input type="button" value="SAVE" class="orngbtn finbtn mrgt10p">
+                  <input type="button" value="CANCEL" class="orngbtn finbtn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">&nbsp;</div>
+    </div>
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>

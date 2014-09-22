@@ -1,0 +1,1071 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-dashboard.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="dashboardbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#" class="currnt"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row rowmrgdbl">
+      <div class="col-md-12">
+        <div class="tab-content">
+          <div class="tab-pane active" id="trends">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="nav nav-tabs rgtab taborngbg pull-left" role="tablist">
+                  <li class="active"><a href="#vacaninqry" role="tab" data-toggle="tab">Vacancies &amp; Inquiries</a></li>
+                  <li><a href="#rentanyl" role="tab" data-toggle="tab">Rent Analysis</a></li>
+                </ul>
+                <div class="mrglf20p dispinbl">
+                  <form class="mrgtp5p">
+                    <div class="form-group form-group-sm mrgbtnone">
+                      <label class="control-label fnt-trebcht almdclr">Floor Plan: &nbsp;</label>
+                      <select class="form-control form-control-auto">
+                        <option>Total SqFt</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="vacaninqry">
+                    <div class="row">
+                      <div class="col-md-12 mrgtp8p-sm">
+                        <div class="panel panel-default bord-gry">
+                          <div class="dash-panlhdng">Rent &amp; Vacant Units</div>
+                          <div class="panel-body text-center"> <img src="images/dash-leasinfo1-graph.png" alt="" class="img-responsive" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="panel panel-default bord-gry">
+                          <div class="dash-panlhdng">INQUIRIES &amp; DEPOSITS</div>
+                          <div class="panel-body text-center"> <img src="images/dash-leasinfo1-graph2.png" alt="" class="img-responsive" /></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="panel panel-default bord-gry">
+                          <div class="dash-panlhdng">METRICS BY WEEK</div>
+                          <div class="panel-body text-center">
+                            <div class="mrgtpbt12p divcenteralgn">
+                              <div class="calarwlf"><a href="javascript:void(0)"><img src="images/dashcalarw.png" alt=""/></a></div>
+                              <div class="calgroup">
+                                <ul class="caldr-icon">
+                                  <li><a href="#">Jan <br>
+                                    2012</a></li>
+                                  <li><a href="#">Feb <br>
+                                    2012</a></li>
+                                  <li><a href="#">Mar <br>
+                                    2012</a></li>
+                                  <li><a href="#">Apr <br>
+                                    2012</a></li>
+                                  <li><a href="#">May <br>
+                                    2012</a></li>
+                                  <li><a href="#">Jun <br>
+                                    2012</a></li>
+                                  <li><a href="#">Jul <br>
+                                    2012</a></li>
+                                  <li><a href="#">Aug <br>
+                                    2012</a></li>
+                                  <li><a href="#">Sep <br>
+                                    2012</a></li>
+                                  <li><a href="#">Oct <br>
+                                    2012</a></li>
+                                  <li><a href="#">Nov <br>
+                                    2012</a></li>
+                                  <li><a href="#">Dec <br>
+                                    2012</a></li>
+                                </ul>
+                                <ul class="caldr-icon">
+                                  <li><a href="#">Jan <br>
+                                    2013</a></li>
+                                  <li><a href="#">Feb <br>
+                                    2013</a></li>
+                                  <li><a href="#">Mar <br>
+                                    2013</a></li>
+                                  <li><a href="#">Apr <br>
+                                    2013</a></li>
+                                  <li><a href="#">May <br>
+                                    2013</a></li>
+                                  <li><a href="#">Jun <br>
+                                    2013</a></li>
+                                  <li><a href="#">Jul <br>
+                                    2013</a></li>
+                                  <li><a href="#">Aug <br>
+                                    2013</a></li>
+                                  <li><a href="#">Sep <br>
+                                    2013</a></li>
+                                  <li><a href="#">Oct <br>
+                                    2013</a></li>
+                                  <li><a href="#">Nov <br>
+                                    2013</a></li>
+                                  <li><a href="#">Dec <br>
+                                    2013</a></li>
+                                </ul>
+                                <ul class="caldr-icon" style="display: block;">
+                                  <li><a href="#">Jan <br>
+                                    2014</a></li>
+                                  <li><a href="#">Feb <br>
+                                    2014</a></li>
+                                  <li><a href="#">Mar <br>
+                                    2014</a></li>
+                                  <li><a href="#">Apr <br>
+                                    2014</a></li>
+                                  <li><a href="#">May <br>
+                                    2014</a></li>
+                                  <li><a href="#">Jun <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Jul <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Aug <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Sep <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Oct <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Nov <br>
+                                    2014</a></li>
+                                  <li class="gry"><a href="#">Dec <br>
+                                    2014</a></li>
+                                </ul>
+                              </div>
+                              <div class="calarwrgt"><a href="javascript:void(0)"><img src="images/dashcalarwrgt.png" alt=""/></a></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="almdclr text-left">VACANT</div>
+                                <div class="tabalgngen table-responsive mrgtp5p">
+                                  <table class="table" id="lesinfo1">
+                                    <thead>
+                                      <tr class="text-center">
+                                        <th>Floor Plan</th>
+                                        <th>Units</th>
+                                        <th>Gross</th>
+                                        <th>Rented</th>
+                                        <th>Net</th>
+                                        <th>Gross %</th>
+                                        <th>Net %</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>1611.0</td>
+                                        <td>60</td>
+                                        <td>27</td>
+                                        <td>33</td>
+                                        <td>3.7 %</td>
+                                        <td>2.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>1.0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>88.0</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>3.4 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>1611.0</td>
+                                        <td>60</td>
+                                        <td>27</td>
+                                        <td>33</td>
+                                        <td>3.7 %</td>
+                                        <td>2.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>1.0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>88.0</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>3.4 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr class="text-right gry">
+                                        <td>Total</td>
+                                        <td>3671.0</td>
+                                        <td>153</td>
+                                        <td>156</td>
+                                        <td>77</td>
+                                        <td>4.2 %</td>
+                                        <td>2.1 %</td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="almdclr text-left">NOTICE</div>
+                                <div class="tabalgngen table-responsive mrgtp5p">
+                                  <table class="table" id="lesinfo2">
+                                    <thead>
+                                      <tr class="text-center">
+                                        <th>Floor Plan</th>
+                                        <th>Gross</th>
+                                        <th>Rented</th>
+                                        <th>Net</th>
+                                        <th>Gross %</th>
+                                        <th>Net %</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>60</td>
+                                        <td>27</td>
+                                        <td>33</td>
+                                        <td>3.7 %</td>
+                                        <td>2.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>3.4 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>60</td>
+                                        <td>27</td>
+                                        <td>33</td>
+                                        <td>3.7 %</td>
+                                        <td>2.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>0</td>
+                                        <td>3.4 %</td>
+                                        <td>0.0 %</td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr class="text-right gry">
+                                        <td>Total</td>
+                                        <td>153</td>
+                                        <td>156</td>
+                                        <td>77</td>
+                                        <td>4.2 %</td>
+                                        <td>2.1 %</td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12 mrgtp20p">
+                                <div class="almdclr text-left">NET UNITS AVAIL</div>
+                                <div class="tabalgngen table-responsive mrgtp5p">
+                                  <table class="table" id="lesinfo3">
+                                    <thead>
+                                      <tr class="text-center">
+                                        <th rowspan="2">Floor Plan</th>
+                                        <th>Net Units Avail</th>
+                                        <th>Net Units Avail %</th>
+                                      </tr>
+                                      <tr class="text-center">
+                                        <th class="text-center"><span class="pull-left">Crnt</span>1 Wk<span class="pull-right">4 Wk</span></th>
+                                        <th class="text-center"><span class="pull-left">Crnt</span>1 Wk<span class="pull-right">4 Wk</span></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">81</span>74<span class="pull-right">71</span></td>
+                                        <td class="text-center"><span class="pull-left">5.0 %</span>4.6 %<span class="pull-right">4.4 %</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                        <td class="text-center"><span class="pull-left">0.0 %</span>0.0 %<span class="pull-right">0.0 %</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td class="text-center"><span class="pull-left">5</span>2<span class="pull-right">4</span></td>
+                                        <td class="text-center"><span class="pull-left">5.7 %</span>2.3 %<span class="pull-right">4.5 %</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">81</span>74<span class="pull-right">71</span></td>
+                                        <td class="text-center"><span class="pull-left">5.0 %</span>4.6 %<span class="pull-right">4.4 %</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                        <td class="text-center"><span class="pull-left">0.0 %</span>0.0 %<span class="pull-right">0.0 %</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td class="text-center"><span class="pull-left">5</span>2<span class="pull-right">4</span></td>
+                                        <td class="text-center"><span class="pull-left">5.7 %</span>2.3 %<span class="pull-right">4.5 %</span></td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr class="text-right gry">
+                                        <td>Total</td>
+                                        <td class="text-center"><span class="pull-left">181</span>193<span class="pull-right">168</span></td>
+                                        <td class="text-center"><span class="pull-left">4.9 %</span>5.3 %<span class="pull-right">4.6 %</span></td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12 mrgtp20p">
+                                <div class="almdclr text-left">TRAFFIC</div>
+                                <div class="tabalgngen table-responsive mrgtp5p">
+                                  <table class="table" id="lesinfo4">
+                                    <thead>
+                                      <tr class="text-center">
+                                        <th rowspan="2">Floor Plan</th>
+                                        <th>Traffic</th>
+                                        <th>&nbsp;</th>
+                                      </tr>
+                                      <tr class="text-center">
+                                        <th class="text-center"><span class="pull-left">PI</span><span class="pull-right">WI</span></th>
+                                        <th class="text-center"><span class="pull-left">Total</span>Rej<span class="pull-right">Canc</span></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">288</span><span class="pull-right">137</span></td>
+                                        <td class="text-center"><span class="pull-left">17</span>1<span class="pull-right">6</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">0</span><span class="pull-right">0</span></td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td class="text-center"><span class="pull-left">5</span><span class="pull-right">4</span></td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">288</span><span class="pull-right">137</span></td>
+                                        <td class="text-center"><span class="pull-left">17</span>1<span class="pull-right">6</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td class="text-center"><span class="pull-left">0</span><span class="pull-right">0</span></td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td class="text-center"><span class="pull-left">5</span><span class="pull-right">4</span></td>
+                                        <td class="text-center"><span class="pull-left">0</span>0<span class="pull-right">0</span></td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr class="text-right gry">
+                                        <td>Total</td>
+                                        <td class="text-center"><span class="pull-left">608</span><span class="pull-right">285</span></td>
+                                        <td class="text-center"><span class="pull-left">51</span>2<span class="pull-right">9</span></td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-xs-12 mrgtp20p">
+                                <div class="almdclr text-left">RENT</div>
+                                <div class="tabalgngen table-responsive mrgtp5p">
+                                  <table class="table" id="lesinfo5">
+                                    <thead>
+                                      <tr class="text-center">
+                                        <th>Floor Plan</th>
+                                        <th>RTR</th>
+                                        <th>Min Rent</th>
+                                        <th>Max Rent</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>35</td>
+                                        <td>38784.0</td>
+                                        <td>46339.0</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>0</td>
+                                        <td>2583.0</td>
+                                        <td>2583.0</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>2</td>
+                                        <td>2038.0</td>
+                                        <td>2213.0</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1</td>
+                                        <td>35</td>
+                                        <td>38784.0</td>
+                                        <td>46339.0</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1.5</td>
+                                        <td>0</td>
+                                        <td>2583.0</td>
+                                        <td>2583.0</td>
+                                      </tr>
+                                      <tr class="text-right">
+                                        <td>1x1Dlx</td>
+                                        <td>2</td>
+                                        <td>2038.0</td>
+                                        <td>2213.0</td>
+                                      </tr>
+                                    </tbody>
+                                    <tfoot>
+                                      <tr class="text-right gry">
+                                        <td>Total</td>
+                                        <td>81</td>
+                                        <td>163173</td>
+                                        <td>185268</td>
+                                      </tr>
+                                    </tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="wrpbord">
+                          <div class="row mrgsidenone orng-titlebg orng-bgrad padbtnone">
+                            <div class="col-md-6 col-sm-12 col-xs-12 mrgtp5p">Business Plan Update</div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 text-rightresp form-horizontal mrgtp8p-sm">
+                              <div class="form-group form-group-sm mrglfnone">
+                                <label class="fnt12">Select Period :</label>
+                                <select class="form-control form-control-auto mrgt15p">
+                                  <option>JUNE</option>
+                                </select>
+                                <select class="form-control form-control-auto mrgt15p">
+                                  <option>2014</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mrgsidenone">
+                            <div class="col-md-12 rchtxtbg fnt12">
+                              <p>Click here to Enter Business Plan</p>
+                            </div>
+                          </div>
+                          <div class="row mrgsidenone mrgtp30p">
+              <div class="panel panel-default orng-cmnt">
+                <div class="panel-heading">Comments on Business Plan Update (06/2014)</div>
+                <div class="panel-body">
+                  <div class="row mrgsidenone">
+                    <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                    <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                      <textarea rows="1" draggable="false"></textarea>
+                    </div>
+                    <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs"><input type="button" value="COMMENT" class="orngbtn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone bgef">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 text-center thumb"><img class="img-responsive mrgtp5p" alt="" src="images/user-icondef.png"></div>
+                        <div class="col-md-11 col-sm-1 padsdnonrsp-xs"> <span class="clrblue"><strong>You</strong></span> Arvind says fine <br>
+                          <span class="text-muted">Aug 01, 2014 at 03:31 PM</span>
+                          <div class="pull-right"> <a class="blu-tooltip editlnk" data-container="body" title="" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Edit"><img alt="" src="images/edit.png"></a> <a class="blu-tooltip deletelnk" title="" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Delete"><img alt="" src="images/delete.png"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="rentanyl">Content for Rent Analysis goes here</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>

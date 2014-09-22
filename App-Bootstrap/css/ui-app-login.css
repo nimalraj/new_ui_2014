@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'eras_demi_itcregular';
+    src: url('../fonts/erasdemi.eot');
+    src: url('../fonts/erasdemi.eot?#iefix') format('embedded-opentype'), url('../fonts/erasdemi.woff2') format('woff2'), url('../fonts/erasdemi.woff') format('woff'), url('../fonts/erasdemi.ttf') format('truetype'), url('../fonts/erasdemi.svg#eras_demi_itcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.login-cont {
+    margin-bottom: 0px;
+    background: url(../images/login-mapbg.png) no-repeat;
+    background-position: 12% top;
+    position: relative;
+}
+.mrglarge.captext {
+    margin-top: 380px;
+}
+.captext {
+    text-align: right;
+    display: inline-block;
+    font-family: 'eras_demi_itcregular';
+    font-size: 18px;
+    margin-top: 320px;
+    width: 65%;
+    float: left;
+}
+.captext span {
+    font-size: 36px;
+    color: #0f566d;
+}
+.login-form {
+    width: 300px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    float: right;
+    margin-right: 7%;
+    display: table;
+}
+.login-header {
+    background: url(../images/login-header.png) left top no-repeat;
+    min-height: 74px;
+    font-size: 21px;
+    color: #fff;
+    padding: 28px 0 0 28px;
+}
+.login-formcont {
+    background: #51bcdf;
+    width: 280px;
+    min-height: 300px;
+    margin-left: 10px;
+}
+.login-formcontin {
+    width: 220px;
+    display: table;
+    margin: 0 auto;
+}
+.loginbtn {
+    height: 29px;
+    background: url(../images/login-btnbg.png) left top repeat-x;
+    border: none;
+    width: 100%;
+    color: #1c87aa;
+    padding: 3px 0 5px 0;
+}
+.loginbtm-line {
+    background: url(../images/loginbtm-line.png) left top repeat-x;
+}
+.formrow {
+/*min-height: 200px;*/
+}
+.formrow .form-group {
+    margin-bottom: 10px;
+}
+.lgnfnt {
+    color: #0c5571;
+}
+.pdnglfrgt15p {
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 1201px) {
+.captext {
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 991px) {
+.captext {
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.captext {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+.login-form {
+    float: none;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+.login-contprnt {
+    padding: 0;
+}
+.login-cont {
+    background: none;
+    width: 100%;
+    padding: 0;
+}
+.login-form {
+    float: none;
+    display: table;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 360px) {
+.login-form {
+    right: auto;
+}
+}

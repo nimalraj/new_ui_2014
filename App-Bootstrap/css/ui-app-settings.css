@@ -1,0 +1,34 @@
+.setbtn {
+    background-color: #3daed4;
+	border-radius:0;
+	text-transform:capitalize;	
+}
+.set-wrpbord {
+    border: solid 4px #efefef;
+    padding: 2px;
+}
+.update-row {
+	padding-top:15px !important;
+	padding-bottom:5px !important;
+}
+.prtyimg-bor {
+	border:1px solid #bababa;
+}
+.gry-bg {
+	background-color:#f2f2f2;
+	margin:0px 0px 5px 0px;
+}
+.img-bg {
+	background-color:#FFF;
+	border:1px solid #bababa;
+	padding:10px;
+}
+.minhgt200p {
+	min-height:200px;
+}
+.mrglf10p {
+	margin-left:10px;
+}
+.pdngremov {
+	padding:0px !important;
+}

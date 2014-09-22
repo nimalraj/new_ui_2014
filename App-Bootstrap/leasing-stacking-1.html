@@ -1,0 +1,1281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-leasing.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="leasingbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#" class="currnt"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container">
+    <form class="form-horizontal">
+      <div class="row">
+        <div class="col-md-12 padsidenone"><span class="lesclr">STACKING PLAN</span></div>
+      </div>
+      <div class="row mrgtp10p lesbrdbt">
+        <div class="col-md-6 col-sm-6 col-xs-6 padsidenone"><a href="#" data-toggle="modal" data-target="#printpdf" class="exprt exprt-bgno bgefim lesclr mrglfnone">Executed</a><a href="#" data-toggle="modal" data-target="#printpdf" class="exprt exprt-bgno lesbg mrglfnone">Pipeline</a></div>
+        <div class="col-md-6 col-sm-6 col-xs-6 padsidenone text-right"><a href="#" data-toggle="modal" data-target="#printpdf" class="exprt exprt-bgno lesbg">Show Less</a></div>
+      </div>
+      <div class="row mrgtp15p fnt-trebcht fnt14 fnt6c">
+        <div class="col-md-12 padsidenone"><span class="lesclr">PROSPECT FROM PIPELINE SELECTED 6 OUT OF 9</span></div>
+        <div class="col-md-12 padsidenone mrgtp10p">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-5 mrgtp8p">Stages</div>
+            <div class="col-md-6 col-sm-6 col-xs-7 text-right">
+              <label class="control-label">Prospect Type &nbsp;</label>
+              <select class="form-control form-control-auto">
+                <option>All</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mrgtp8p">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12 padng-lefnone padsdnonrsp-xs">
+              <div class="lestck-lfscroll"> <a href="#" >
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="LEAD" data-container="body"><img src="images/leadicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">LEAD
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="CONTACTED" data-container="body"><img src="images/contactedicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">CONTACTED
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="PROPOSAL" data-container="body"><img src="images/proposalicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">PROPOSAL
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="NEGOTIATION" data-container="body"><img src="images/negotitnicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">NEGOTIATION
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="PENDING APPROVAL" data-container="body"><img src="images/pdapprovalicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">PENDING APPROVAL
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="LEASE PREPARATION" data-container="body"><img src="images/leaseprepicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">LEASE PREPARATION
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="PROPOSAL ACCEPTED" data-container="body"><img src="images/proposalicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">PROPOSAL ACCEPTED
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="APPROVED" data-container="body"><img src="images/approvedicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">APPROVED
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="EXECUTED" data-container="body"><img src="images/execicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">EXECUTED
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> <a href="#">
+                <div class="row metro-blks-hrz">
+                  <div class="col-md-12">
+                    <div class="hrz-metro-icon" data-toggle="tooltip" data-placement="bottom" title="DEAD DEALS" data-container="body"><img src="images/ddealsicon-hover.png" alt=""/></div>
+                    <div class="hrz-metro-titl">DEAD DEALS
+                      <input type="checkbox" class="pull-right">
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+            <div class="col-md-9 col-sm-8 col-xs-12 tabalgngen table-responsive">
+              <table class="table" id="lestacktabl">
+                <thead>
+                  <tr>
+                    <th><a href="#">Select</a></th>
+                    <th><a href="#">Suite</a></th>
+                    <th><a href="#">Rentable SF</a></th>
+                    <th><a href="#">Prospect Name</a></th>
+                    <th><a href="#">Stage</a></th>
+                    <th class="minwdt185p"><a href="#">Actions</a></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                  <tr class="text-center valgnmdl">
+                    <td><input type="checkbox"></td>
+                    <td>101<br>
+                      Occupied</td>
+                    <td class="text-center">3200.0</td>
+                    <td><a href="#">Neel</a><br>
+                      New</td>
+                    <td>Lead</td>
+                    <td class="text-center"><div class="divcenteralgn">
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-chaticn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left"><a href="#">
+                          <div class="les-cmnticn les-docicn"></div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Attachment" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-attachicn">
+                            <div class="les-icon-indiv">11</div>
+                          </div>
+                          </a></div>
+                        <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Delete Action" data-container="body"><a href="#">
+                          <div class="les-cmnticn les-delicn"></div>
+                          </a></div>
+                      </div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row mrgtp15p">
+            <div class="col-md-12 text-right"> <a class="exprt exprt-bgno bg6cim" href="#">Reset</a> <a class="exprt exprt-bgno lesbg" href="#">Submit</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row rowmrgdbl graphrow mrgtp15p fnt-trebcht fnt6c">
+        <div class="col-md-12">
+          <label class="control-label mrgt10p">View Future state as in</label>
+          <select class="form-control form-control-auto">
+            <option>Today</option>
+          </select>
+        </div>
+      </div>
+      <div class="row rowmrgdbl graphrow mrgtp15p">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default bord-gry">
+            <div class="dash-panlhdng lesclr">CURRENT TENANTS</div>
+            <div class="panel-body text-center"> <img src="images/occup.png" alt="" class="img-responsive"/>
+              <div class="graphtxt text-right linehgt-17im"><span class="pull-left">85,138 SF</span> <span class="pull-right"><a href="#" class="gren">21 SUITE(S)</a><br>
+                Occupancy as of: 2014-12-15</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="panel panel-default bord-gry">
+            <div class="dash-panlhdng lesclr">CURRENT TENANTS &amp; SELECTED PROSPECTS</div>
+            <div class="panel-body text-center"> <img src="images/ytd.png" alt="" class="img-responsive"/>
+              <div class="graphtxt text-right linehgt-17im"><span class="pull-left">85,138 SF</span> <span class="pull-right"><a href="#" class="gren">21 SUITE(S)</a><br>
+                Occupancy as of: 2014-12-15</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row fnt6c fnt-trebcht fnt12">
+        <div class="col-md-7 col-sm-7 col-xs-6 fnt-trebcht fnt14 lesclr"><span class="fnt12 fnt6c">Stocking Floor Plan</span> <br>
+          TOTAL AREA : 55,189 SF <span class="fnt12 fnt6c">(All)</span></div>
+        <div class="col-md-5 col-sm-5 col-xs-6 text-right"><a href="#" class="exprt exprt-bgno lesbg">Preview PDF</a></div>
+      </div>
+      <div class="row fnt6c fnt-trebcht fnt12">
+        <div class="col-md-12 mrgtp15p">
+          <div class="form-group form-group-sm">
+            <div class="row text-center les-stack-frmhold">
+              <div class="col-md-4 text-left">
+                <label class="control-label">Show Floors with</label>
+                <select class="form-control form-control-auto">
+                  <option>Equal with</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="control-label">Show :</label>
+                <label class="control-label">
+                  <input type="radio">
+                  &nbsp;All</label>
+                <label class="control-label">
+                  <input type="radio">
+                  &nbsp;Vacant</label>
+                <label class="control-label">
+                  <input type="radio">
+                  &nbsp;Exp.Yr</label>
+                <select class="form-control form-control-auto">
+                  <option>All</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="control-label">
+                  <input type="radio">
+                  &nbsp;View :</label>
+                <select class="form-control form-control-auto">
+                  <option>Option held</option>
+                </select>
+                <select class="form-control form-control-auto">
+                  <option>All</option>
+                </select>
+                <select class="form-control form-control-auto">
+                  <option>Exp Date</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mrgtp15p fnt6c">
+        <div class="col-md-12">
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">Floor</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone">
+              <div class="shdw-mdl shdw-bged text-center" style="width: 100%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">Bang Arc <br>
+                63,769 SF Office<br>
+                New York</div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt text-right fnt18 pdngtp25pim">Total SF</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">9</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone">
+              <div class="shdw-mdl shdw-bgblue text-left" style="width: 100%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">Bang Arc <br>
+                63,769 SF Office<br>
+                New York</div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">8</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12" data-toggle="modal" data-target="#addprospect">
+              <div class="shdw-mdl shdw-bggreen text-left brdash-ff00" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span>
+                <div class="pull-right stck-rednum mrgt10p">1</div>
+              </div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span>
+                <div class="pull-right stck-rednum mrgt10p">1</div>
+              </div>
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="modal fade col-xs-12" id="addprospect" tabindex="-1">
+              <div class="modal-dialog cust-modaldialog wdt50pr-resp">
+                <div class="modal-content text-left">
+                  <div class="modal-header">
+                    <button type="button" class="close modal-closebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title lesclr" id="myModalLabel">#900 NITRO STRATEGY INC.
+                      <button type="button" class="btn btn-default orngbtn lesbtn pull-right" data-dismiss="modal">Add Prospect</button>
+                    </h4>
+                  </div>
+                  <div class="modal-body mrgbt25p fnt000">
+                    <div class="row linehgt-23p">
+                      <div class="col-md-12">
+                        <div class="text-left pdng15p mrgtp15p" style="background-color:#98ED3A;">
+                          <h4 class="fnt12 mrgtpbtnone">NITRO STRATEGY INC.
+                            <div class="pull-right"><img src="images/star-white.png" alt=""/> &nbsp;Current Tenant</div>
+                          </h4>
+                          <div class="clearfix mrgtp15p"> <span class="fnt11 linehgt-17 pull-left">Lease End: 07/31/14<br>
+                            Rentable SF: 16106<br>
+                            Option<br>
+                            Right of First Offer: 08/14 to 07/19 : 504, 505</span> <span class="fnt11 linehgt-17 pull-right">Lease Term: 36 Month(s)<br>
+                            <a href="#" class="mrgt10p" data-toggle="tooltip" data-placement="bottom" title="Abstract view" data-container="body"><img src="images/les-abstract-view.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tenant Info" data-container="body"><img src="images/les-tenant-ino.png" alt=""/></a> </span> </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="text-left pdng15p mrgtp15p">
+                          <h4 class="fnt12 mrgtpbtnone lesclr"><strong>PIPELINE</strong></h4>
+                        </div>
+                      </div>
+                      <div class="col-md-12 les-stck-popscroll">
+                        <div class="text-left pdng15p bgef">
+                          <h4 class="fnt12 mrgtpbtnone">NITRO STRATEGY INC.</h4>
+                          <div class="clearfix mrgtp10p"> <span class="fnt11 linehgt-17 pull-left">Lease Start: 07/31/14<br>
+                            Term: 13 Month(s)</span>
+                            <div class="pull-right">
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-chaticn">
+                                  <div class="les-icon-indiv linehgt-17 text-center">11</div>
+                                </div>
+                                </a></div>
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-docicn"></div>
+                                </a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-left pdng15p mrgtp5p bgef">
+                          <h4 class="fnt12 mrgtpbtnone">NITRO STRATEGY INC.</h4>
+                          <div class="clearfix mrgtp10p"> <span class="fnt11 linehgt-17 pull-left">Lease Start: 07/31/14<br>
+                            Term: 13 Month(s)</span>
+                            <div class="pull-right">
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-chaticn">
+                                  <div class="les-icon-indiv linehgt-17 text-center">11</div>
+                                </div>
+                                </a></div>
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-docicn"></div>
+                                </a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-left pdng15p mrgtp5p bgef">
+                          <h4 class="fnt12 mrgtpbtnone">NITRO STRATEGY INC.</h4>
+                          <div class="clearfix mrgtp10p"> <span class="fnt11 linehgt-17 pull-left">Lease Start: 07/31/14<br>
+                            Term: 13 Month(s)</span>
+                            <div class="pull-right">
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Comments" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-chaticn">
+                                  <div class="les-icon-indiv linehgt-17 text-center">11</div>
+                                </div>
+                                </a></div>
+                              <div class="pull-left" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body"><a href="#">
+                                <div class="les-cmnticn les-docicn"></div>
+                                </a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="text-left pdngtpbt15p mrgtp15p brdbtdsba">
+                          <h4 class="fnt12 mrgtpbtnone lesclr"><strong>ENCUMBERED BY</strong></h4>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="row text-left pdngtpbt15p fnt12">
+                          <div class="col-md-12 lesclr">603:</div>
+                          <div class="col-md-4">Option Name<br>
+                            Renewal</div>
+                          <div class="col-md-4">Option Held By<br>
+                            Sensis Consulting, INC.</div>
+                          <div class="col-md-4">Option Dates<br>
+                            04/15 to 04/22</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default orngbtn lesbtn" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">7</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span>
+                <div class="pull-right stck-rednum mrgt10p">1</div>
+              </div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">6</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgblue text-left" style="width:25%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgfdblue text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:25%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">5</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:40%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgblue text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgfdblue text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">4</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">3</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">2</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">1</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+          <div class="row les-stckshdw-blocks fnt-trebcht fnt000 mrgtp13p">
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-lef text-left fnt18">B</div>
+            </div>
+            <div class="col-md-10 col-sm-8 col-xs-8 padsidenone fnt12">
+              <div class="shdw-mdl shdw-bggreen text-left" style="width:50%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:30%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+              <div class="shdw-mdl shdw-bgorng text-left" style="width:20%;" data-toggle="tooltip" data-placement="bottom" title="Click to view details" data-container="body">
+                <h4>NITRO STRATEGY INC.</h4>
+                <span class="fnt11">#900 | SF: 1,300<br>
+                07/31/15</span></div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 padsidenone">
+              <div class="bgedshdw-rgt linehgt-14p text-right fnt12">Occ : 1,300<br>
+                Vac : 0<br>
+                Total : 1,300</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>

@@ -1,0 +1,992 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-financials.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="financialbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#" class="currnt"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container"> 
+    <!-- financials blocks-->
+    <div class="row padng-lefnone">
+      <div class="col-md-3 col-sm-3 padng-lefnone finaclr mrgtp5p fnt12"><a href="#" class="padside10p">Jul 1, 2014</a> <a href="#" class="padside10p">Jun 30,2014</a></div>
+      <div class="col-md-9 col-sm-9 finclr form-horizontal">
+        <div class="form-group form-group-sm">
+          <div class="pull-right">
+            <label class="control-label pull-left">View : &nbsp;</label>
+            <select class="form-control form-control-auto pull-left">
+              <option>Tenants with unpaid or prepaid balance</option>
+            </select>
+            <a href="#" data-toggle="dropdown" class="exprt">Export</a>
+            <ul class="dropdown-menu exprt-list">
+              <li><a href="#"><img src="images/excelicon.png" alt=""/> Excel</a></li>
+              <li><a href="#"><img src="images/pdficon.png" alt=""/> Pdf</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mrgtp10p">
+      <div class="col-md-5 col-sm-12 col-xs-12 text-center fingrph-holder">
+        <div class="fingraph"><img src="images/financialsgraph.png" alt="" class="img-responsive"/></div>
+      </div>
+      <div class="col-md-7 col-sm-12 col-xs-12 padsidenone">
+        <div class="row">
+          <div class="col-md-12 finblocks padsidenone">
+            <div class="row mrgsidenone">
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="finbgblk">Total Unpaid<br>
+                  &nbsp;<br>
+                  <span>$ 198,801</span></div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="findrkbgblk">Total Prepays<br>
+                  &nbsp;<br>
+                  <span>$ - 97,265</span></div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="finbgblk">Balance<br>
+                  &nbsp;<br>
+                  <span>$ 101,536</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 finblocks padsidenone">
+            <div class="row mrgsidenone">
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="findrkbgblk">Tenants w/ AR Bal.<br>
+                  &nbsp;<br>
+                  <span>44</span></div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="finbgblk">AVG Balance<br>
+                  &nbsp;<br>
+                  <span>$ 2,308</span></div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12 finblock-padng">
+                <div class="findrkbgblk">Highest Unpaid <br>
+                  <small><a href="#">(One Day F...)</a></small><br>
+                  <span>$ 71,074</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- financials blocks--> 
+    <!-- financials table-->
+    <div class="row tabalgngen mrgtp30p table-responsive mrgsidenone-xs">
+      <div class="col-md-12 padsidenone">
+        <table class="table" id="finantable">
+          <thead>
+            <tr>
+              <th><a href="#">Property</a></th>
+              <th><a href="#">Suite</a></th>
+              <th><a href="#">Tenant Name</a></th>
+              <th><a href="#">Total Unpaid $</a></th>
+              <th><a href="#">Aging Days</a></th>
+              <th><a href="#">Prepays</a></th>
+              <th><a href="#">Balance</a></th>
+              <th><a href="#">Modified &nbsp;<img src="images/whtedwarw.png" alt=""/></a></th>
+              <th><a href="#"><img src="images/docicon.png" alt=""/></a></th>
+            </tr>
+            <tr class="text-right gry">
+              <th class="text-left">&nbsp;</th>
+              <th>&nbsp;</th>
+              <th class="text-left">&nbsp;</th>
+              <th>&nbsp;</th>
+              <th class="finsbtdfxdhdr"><span>0-30$</span> <span>30-60$</span> <span>60-90$</span> <span>90-120$</span></th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mrgsidenone mrgtp10p">
+                  <div class="panel panel-default mrgbtnone bgef">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-11 col-sm-1 padsdnonrsp-xs"> <span class="clrblue"><strong>You</strong></span> Arvind says fine <br>
+                          <span class="text-muted">Aug 01, 2014 at 03:31 PM</span>
+                          <div class="pull-right"> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="blu-tooltip editlnk"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip"  data-placement="bottom" title="Delete" class="blu-tooltip deletelnk"><img src="images/delete.png" alt=""/></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">+</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+            <tr class="text-right">
+              <td class="text-left">Bang Arc</td>
+              <td><strong>103</strong></td>
+              <td class="text-left"><a href="#">Heslip Coastal Dental</a></td>
+              <td>12,193</td>
+              <td class="finsbtdfxdhdr"><span>7,268</span> <span>4,926</span> <span>1</span> <span>0</span></td>
+              <td>0</td>
+              <td>12,193</td>
+              <td>07/03/14</td>
+              <td class="text-center"><a href="javascript:void(0)" class="fincmtoggler cmntextbg text-muted">10</a></td>
+            </tr>
+            <tr class="trtoggled">
+              <td colspan="9"><div class="row mrgsidenone">
+                  <div class="panel panel-default mrgbtnone fin-cmnt">
+                    <div class="panel-body">
+                      <div class="row mrgsidenone">
+                        <div class="col-md-1 col-sm-1 col-xs-12 text-center thumb"><img src="images/user-icondef.png" alt="" class="img-responsive mrgtp5p"/></div>
+                        <div class="col-md-10 col-sm-9 col-xs-12 padsdnonrsp-xs">
+                          <textarea rows="1" draggable="false"></textarea>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-12 padsdnonrsp-xs">
+                          <input type="button" value="COMMENT" class="orngbtn finbtn">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- financials table--> 
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>

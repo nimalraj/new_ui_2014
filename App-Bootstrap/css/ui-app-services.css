@@ -1,0 +1,258 @@
+.setbtn {
+    background-color: #f1aa1c;
+	border-radius:0;
+	text-transform:capitalize;	
+}
+.setbtn-rad {
+	border-radius:4px;
+}
+.setbtn-cnl {
+    background-color: #6c6c6c;
+	border-radius:0;
+	text-transform:capitalize;	
+}
+.ser-wrpbord {
+    border: solid 4px #efefef;
+    padding: 2px;
+}
+.seraclr a {
+    color: #eda71a;
+}
+.serclr, .serclr th {
+    color: #eda619 !important;
+}
+.serclr1, .serclr1 a {
+	color:#0558a8 !important;
+}
+.serclr1 a:hover, .serclr1 .selected {
+	color:#eda71a !important;
+}
+.sltmul {
+	background-color:#FFF;
+	border:1px solid #bababa;
+	padding:10px;
+	height:100px;
+	overflow-y:scroll;
+}
+.tabalgngen tbody tr td {
+	border:none !important;
+	padding-left:15px;
+}
+.update-row {
+	padding-top:15px !important;
+	padding-bottom:5px !important;
+}
+.panel-body {
+	padding:7px;
+	margin:7px 0px 0px 7px !important;
+}
+.panel-body .thumb {
+	border: solid 1px #c3c3c3;
+	min-height: 63px;
+}
+.panel-default {
+	border:6px solid #efefef;
+	border-radius:none !important;
+}
+.sercommbtn {
+	background: #f1aa1c;
+	font: normal 10px "Verdana";
+	color: #fff !important;
+	text-transform: uppercase;
+	border: 0;
+	padding: 7px 10px;
+}
+.serrgt {
+    display: inline-block;
+    float: right;
+    margin-bottom: 20px;
+}
+.serlgnlbl {
+	color: #e7a013;
+	float: left;
+}
+.cal-orgbtn {
+	background: #f1aa1c;
+	font: normal 12px "Verdana";
+	color: #fff !important;
+	text-transform:capitalize;
+	border: 0;
+	padding: 7px 10px;
+	text-align:center;
+	min-width:125px;
+	float:left;	
+}
+.cal-blubtn {
+	background: #60a9dc;
+	font: normal 12px "Verdana";
+	color: #fff !important;
+	text-transform:capitalize;
+	border: 0;
+	padding: 7px 10px;
+	text-align:center;	
+	min-width:125px;
+	float:left;
+}
+.mrglf10p {
+	margin-left:10px;
+}
+.fltlft {
+	float:left;
+}
+.mrgtp5p {
+	margin-top:5px;
+}
+.mrgtp10p {
+	margin-top:10px;
+}
+.mrgrt15p {
+	margin-right:15px;
+}
+/*.ser-stckcmtmid .col-md-9 {
+    width: 83%;
+}*/
+.upfls-list {
+	border:1px dotted #bababa;
+	padding:7px;
+	margin-top:5px;
+}
+.pdnglt4p {
+	padding:4px !important;
+}
+.cls-btn {
+	float:right;
+}
+.minhgt340p {
+	min-height:340px !important;
+}
+.gobtn {
+	background-color:#eda71a !important;
+	border-radius:0px;
+	padding:0px 15px;
+	border:0px;
+}
+.white {
+	color:#FFF;
+}
+.brrad {
+	border-radius:0px !important;
+}
+.ser-metro-blks {
+	width: 12%;
+	float: left;
+	border: solid 1px #efefef;
+	margin-left: 11px;
+	margin-right: 11px;
+	font: italic 12px "Trebuchet MS";
+	color: #6c6c6c;
+	text-align: center;
+	display: table;
+	margin-bottom: 10px;
+	box-shadow: 8px 8px #efefef;
+	padding:4px;
+	min-width:110px;
+	min-height:110px;
+	background-color:#FFF;
+}
+.sermet-blks-wdt {
+	width: 10.50% !important;
+	min-width:100px !important;
+	margin-left: 9px !important;
+	margin-right: 9px !important;	
+	
+}
+.ser-metro-blks a {
+	color:#6c6c6c !important;
+}
+.ser-metro-blks:hover {
+	/*background-color:#FF9900;*/
+	background-color:#FFF;
+}
+.orgbg {
+	background-color:#e7a013 !important;
+}
+.ser-metro-hd {
+	height:110px;
+	padding:40px 10px;
+	color:#FFF;
+}
+.ser-metro-icon {
+	min-height:45px;
+	padding-top:7px;
+	margin-bottom: 0;
+}
+.ser-metro-titl {
+	min-height:42px;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.ser-metro-txt {
+	font-size: 14px;
+	padding-top: 5px;
+}
+.ser-metro-iconwhte {
+    display: none !important;
+}
+.ser-metro-blks:hover .ser-metro-iconblu, .ser-metro-blks .selected .ser-metro-iconblu {
+    display: none !important;
+}
+.ser-metro-blks:hover .ser-metro-iconwhte, .ser-metro-blks .selected .ser-metro-iconwhte {
+    display: inline-block !important;
+}
+.ser-metro-blks:hover .ser-metro-titl, .ser-metro-blks:hover .ser-metro-txt {
+    color: #FF9900 !important;
+}
+.ser-metro-blks .selected {
+	color:#FF9900 !important;
+}
+.exprt {
+	background-color:#e7a013 !important;
+}
+.tabalgngen table thead tr th {
+    background: url(../images/ser-hdbg.png) left top repeat-x !important;
+	height:65px !important;
+}
+.tabalgngen tbody tr td a, .tabalgngen tbody tr td a:hover {
+	color:#e7a013 !important;
+}
+.ser-chaticn {
+    background: url("../images/les-comment-icon.png") no-repeat scroll left 8px rgba(0, 0, 0, 0);
+}
+.ser-cmnticn {
+    color: #ffffff !important;
+    display: inline-block;
+    float: left;
+    font-size: 9px;
+    height: 36px;
+    margin-right: 5px;
+    padding: 14px 15px;
+    width: 29px;
+}
+.ser-icon-indiv {
+    background: none repeat scroll 0 0 #e7a013;
+    border-radius: 100px;
+    height: 14px;
+    margin-top: 5px;
+    width: 14px;
+}
+.ser-chaticn {
+    background: url(../images/icon-sercom.png) left 3px no-repeat;
+}
+.ser-editicn {
+    background: url(../images/edit.png) 7px 10px no-repeat;
+}
+.ser-delicn {
+    background: url(../images/delete.png) 7px 13px no-repeat;
+}
+.ser-tbltxt table tbody tr td {
+	font-weight:bold;
+	color:#e7a013 !important;
+	font-size:16px;
+}
+.tab-cont {
+	width:18%;
+}
+.panel-bor {
+	border: 5px solid #fafafa;
+	margin: 7px;
+}

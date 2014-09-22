@@ -1,0 +1,363 @@
+@charset "utf-8";
+/* CSS Document */
+.finclr {
+    color: #845d9f;
+}
+.finclr label {
+    font-weight: normal;
+}
+.finaclr a {
+    color: #845d9f;
+    border-right: dashed 1px;
+}
+.finaclr a:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+.img-responsive {
+    width: auto; /*-- rsponsive img excessive width fix for ie 10 & 9 --*/
+}
+/*-- financials table --*/
+.financialbdy .tabalgngen table thead tr {
+    background: url(../images/fintablbg.png) left top repeat-x;
+}
+/*-- financials table --*/
+.fingradlabl-debt {
+    background: #9d77b8; /* Old browsers */
+    background: -moz-linear-gradient(top, #9d77b8 0%, #8861a4 7%, #7f589a 11%, #825c9e 33%, #936daf 70%, #9972b4 89%, #9972b5 93%, #976fb4 96%, #8a5faa 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9d77b8), color-stop(7%, #8861a4), color-stop(11%, #7f589a), color-stop(33%, #825c9e), color-stop(70%, #936daf), color-stop(89%, #9972b4), color-stop(93%, #9972b5), color-stop(96%, #976fb4), color-stop(100%, #8a5faa)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #9d77b8 0%, #8861a4 7%, #7f589a 11%, #825c9e 33%, #936daf 70%, #9972b4 89%, #9972b5 93%, #976fb4 96%, #8a5faa 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #9d77b8 0%, #8861a4 7%, #7f589a 11%, #825c9e 33%, #936daf 70%, #9972b4 89%, #9972b5 93%, #976fb4 96%, #8a5faa 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #9d77b8 0%, #8861a4 7%, #7f589a 11%, #825c9e 33%, #936daf 70%, #9972b4 89%, #9972b5 93%, #976fb4 96%, #8a5faa 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #9d77b8 0%, #8861a4 7%, #7f589a 11%, #825c9e 33%, #936daf 70%, #9972b4 89%, #9972b5 93%, #976fb4 96%, #8a5faa 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d77b8', endColorstr='#8a5faa', GradientType=0 ); /* IE6-9 */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    position: relative;
+}
+.fingradlabl-debt div {
+    left: 37%;
+    top: 40%;
+    position: absolute;
+}
+.debtlf-dbln {
+    line-height: 15px;
+    padding-bottom: 9px;
+    padding-top: 10px;
+}
+.dbtrgt {
+    background: url(../images/finrgt-arrowbg.png) left 49% no-repeat;
+    background-color: #efefef;
+}
+.editanbg {
+    background: url(../images/edit.png) left top no-repeat;
+    padding-left: 18px !important;
+}
+.deleteanbg {
+    background: url(../images/delete.png) left 3px no-repeat;
+    padding-left: 18px !important;
+}
+.comtchatanbg {
+    background: url(../images/comment-chat.png) left 3px no-repeat;
+    padding-left: 20px !important;
+}
+.finsbtdfxdhdr span {/* receivables page fixed header fix span tag */
+    width: 25%;
+    float: left;
+}
+.fintplfcnt {
+    width: 254px;
+}
+.fintplftab {
+    min-height: 103px;
+}
+.fintplftab div.fintb {
+    float: left;
+    margin: 10px 5px 10px 2px;
+}
+.fintplftab div.fintb:last-child {
+    margin-right: 0;
+}
+.fintplftab a {
+    background: #efefef;
+    color: #8c66a7;
+    padding: 11px 16px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.fintplftab a.active {
+    background-color: #8c66a7;
+    color: #fff;
+}
+/*-- financials table top div grad bg --*/
+.purp-titlebg {
+    background: url(../images/ornge-titlebg.png) left bottom repeat-x;
+    background-color: #ef7e5e;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 65px;
+}
+.purp-bgrad {
+    background: url(../images/purp-titlebg-grad.png) left bottom repeat-x;
+    background-color: #9972b5;
+}
+.opstbgarw:first-child {
+    background: url(../images/opstat-arw.png) 20px 16px no-repeat;
+    padding-left: 33px;
+}
+.opstbgarw-sub:first-child {
+    background: url(../images/opstat-arw.png) 30px 16px no-repeat;
+    padding-left: 43px;
+}
+.opstbgarw-subin:first-child {
+    background: url(../images/opstat-arw.png) 60px 20px no-repeat;
+    padding-left: 73px;
+}
+.opstbgarw-whte {
+    background-color: #a685be;
+}
+.opstbgarw-whte .opstbgarw-sub {
+    background: url(../images/opstat-arwhte.png) 20px 16px no-repeat;
+    padding-left: 33px;
+}
+.opstrowhgt {
+    width: 1169px;
+}
+.opstrowhgt .row {
+    height: 37px;
+}
+.opstrowhgt .col-md-12 .col-md-3 {
+    /*width: 25%;*/
+    width: 290px;
+}
+.opstrowhgt .col-md-12 .col-md-1 {
+    /*width: 9%;*/
+    width: 104px;
+}
+.opstrowhgt .col-md-12 .col-md-1.opst-separater {
+    /*width: 1%;*/
+    width: 30px;
+}
+.opstrowhgt .col-md-7 {
+    /*width: 61%;*/
+    width: 706px;
+}
+.opstrowhgt .col-md-4 {
+    /*width: 37%;*/
+    width: 421px;
+}
+/*-- financials table top div grad bg --*/
+/*-- financials operation statement table styles --*/
+.opstblrow .col-md-12 .col-md-3, .opstblrow .col-md-12 .col-md-1 {
+    border-top: dashed 1px #c5c3c3;
+}
+.opstblrow .col-md-12 .col-md-1.opst-separater {
+    border-top: none;
+}
+.opstblrow .col-md-12 .opsthdrow .col-md-3, .opstblrow .col-md-12 .opsthdrow .col-md-1 {
+    border-top: none;
+    height: 30px !important;
+}
+.finopstdv {
+    font-size: 14px;
+    color: #8b65a6;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    background: #f4f4f4;
+    padding: 20px 20px;
+    border-bottom: dashed 1px #c5c3c3;
+}
+.finopstcmnt {
+    color: #8d67a9;
+    font-size: 11px;
+    padding: 5px;
+    border: solid 1px #cacaca;
+    display: inline-block;
+    float: right;
+}
+.finopstcmnt p {
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.finopstcmnt p.lnkdispno {
+    display: none;
+}
+.finopstcmnt a {
+    margin-right: 20px;
+    text-decoration: underline !important;
+}
+.addpurp {
+    background: url(../images/addpurp.png) left 5px no-repeat;
+    padding-left: 18px !important;
+    text-decoration: underline !important;
+    float: right;
+}
+.finopst-dispno {
+    display: none;
+    padding-bottom: 0px;
+}
+.finopst-trbg td {
+    background: #a685be;
+    color: #fff !important;
+}
+.fintotsf-wrp {
+    display: inline-block;
+    height: 6px;
+    background: #d499ff;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    margin: 0 15px;
+    padding: 1px;
+}
+.fintotsf-in {
+    width: 86%;
+    height: 4px;
+    background: #815a9c;
+    border-radius: 7px;
+}
+.varlab {
+    float: left;
+    margin-top: 7px;
+    font-size: 12px;
+}
+.vardv {
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*-- financials operation statement table styles --*/
+.opstgraph {
+    min-height: 192px;
+    background: url(../images/finopst-bgarw.png) left 155px no-repeat;
+    background-color: #fff;
+}
+.finop-tdbgfe td {
+    background-color: #f4f4f4 !important;
+}
+.finoptpsec {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+.finoptpsec div, .finoptlefrow div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 64px;
+    line-height: 33px;
+}
+.finoptpsec div:nth-child(1) {
+    background: #8c66a7;
+}
+.finoptlefrow div:nth-child(1) {
+    background: #e6e4e5;
+}
+.finoptlefrow div:nth-child(2) {
+    background-color: #f2f2f2;
+}
+.finoptlefrow div:nth-child(3) {
+    background-color: #fafafa;
+}
+.finpoptxt {
+    font-size: 13px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+.fintotsf-wrp {
+    background: #815A9C !important;
+    border: solid 1px #D499FF !important;
+    border-radius: 7px !important;
+    display: inline-block !important;
+    height: 8px !important;
+    margin: 0 15px !important;
+    min-width: 70px !important;
+    overflow: hidden !important;
+    padding: 1px !important;
+}
+.financialbdy .ui-slider-horizontal .ui-slider-range {
+    height: 4px !important;
+    left: 2px !important;
+    top: 1px !important;
+    background: #D499FF;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+}
+.draginpt {
+    background: none;
+    border: none;
+    width: 25px;
+}
+.disptogtd {
+    display: none;
+}
+.disptrow {
+    display: table-row;
+}
+.finvaruser {
+    background: url(../images/finvarusers.png) 5px 3px no-repeat;
+    border: 1px solid #CCCCCC;
+    display: block;
+    height: 28px;
+    overflow: hidden;
+    padding: 2px 25px;
+    background-color: #fff;
+    line-height: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.finvaruserh {
+    overflow: visible;
+    height: auto;
+}
+
+@media screen and (max-width: 1201px) {
+.fintplfcnt {
+    width: auto;
+    display: inline;
+}
+.fintplftab div.fintb {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.opstblscrol {
+    /*width: 100%;*/
+    overflow: auto;
+}
+}
+
+@media screen and (max-width: 991px) {
+.fintplfcnt {
+    width: 252px;
+    display: table;
+}
+.fintplftab {
+    border-right: none;
+}
+.fintplftab div.fintb {
+    display: block;
+    margin-bottom: 10px;
+}
+.dbtrgt {
+    background-image: none;
+    text-align: center;
+}
+.fingradlabl-debt div {
+    position: static;
+}
+}
+
+@media screen and (max-width: 360px) {
+.fintplfcnt {
+    width: auto;
+    display: inline;
+}
+}

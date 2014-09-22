@@ -1,0 +1,985 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-leasing.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="leasingbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#" class="currnt"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row lesclr">
+      <div class="col-md-3 col-sm-3 col-xs-3 padng-lefnone mrgtp5p">PIPELINE</div>
+      <div class="col-md-9 col-sm-9 col-xs-9 form-horizontal">
+        <div class="form-group form-group-sm">
+          <div class="pull-right"> <a href="#" data-toggle="dropdown" class="exprt lesbg">Export</a>
+            <ul class="dropdown-menu exprt-list lesexprt-list">
+              <li><a href="#"><img src="images/excelicon.png" alt=""/> Excel</a></li>
+              <li><a href="#"><img src="images/pdficon.png" alt=""/> Pdf</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row rowmrgdbl graphrow">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="panel panel-default bord-gry">
+          <div class="dash-panlhdng lesclr">VACANCY</div>
+          <div class="panel-body text-center"> <img src="images/lseinf-graph-2.png" alt="" class="img-responsive"/>
+            <div class="graphtxt text-right"><span class="pull-left">85,138 SF</span> <span class="pull-right"><a href="#" class="gren">21 SUITE(S)</a></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="panel panel-default bord-gry">
+          <div class="dash-panlhdng lesclr">6 MONTH EXPIRATIONS</div>
+          <div class="panel-body text-center"> <img src="images/lseinf-graph-3.png" alt="" class="img-responsive"/>
+            <div class="graphtxt text-right"><span class="pull-left">85,138 SF</span> <span class="pull-right"><a href="#" class="gren">21 SUITE(S)</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row rowmrgdbl lesclr">
+      <div class="col-md-6 col-sm-6">STAGES</div>
+      <div class="col-md-6 col-sm-6 text-rightresp">
+        <label class="fnt12 fnt6c">Add / View Listing Broker :</label>
+        <a href="#" class="lespipelnk" data-toggle="modal" data-target="#listing"><img src="images/lespipeline-icon.png" alt=""/> &nbsp;0</a> </div>
+      <div class="modal fade" id="listing" tabindex="-1">
+        <div class="modal-dialog cust-modaldialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close modal-closebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title lesclr" id="myModalLabel"> Add / Edit Listing Brokers</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row mrgtp15p">
+                <div class="col-md-6 fnt13 fnt6c">Give listing brokers access to update prospects.</div>
+                <div class="col-md-6 text-rightresp"><a href="#" class="exprt exprt-bgno lesbg lespopformshw">Add Broker</a></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="table-responsive mrgtp15p">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Company</th>
+                          <th>Phone</th>
+                          <th>Email</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td>Spinono</td>
+                          <td>Amp Technologies</td>
+                          <td>31222 4212 22</td>
+                          <td>spinoso@theamp.com</td>
+                          <td><a href="#" class="mrgt15p"><img src="images/edit.png" alt=""/></a> <a href="#"><img src="images/delete.png" alt=""/></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="divcenteralgn minwdt80pr">
+                    <form class="form-horizontal lespopform" role="form">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label fnt13 fnt6c"><strong>Name</strong> <span class="text-danger">*</span></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label fnt13 fnt6c"><strong>Company</strong> <span class="text-danger">*</span></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" placeholder="Company">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label fnt13 fnt6c"><strong>Phone</strong></label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label fnt13 fnt6c"><strong>Email</strong> <span class="text-danger">*</span></label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label fnt13 fnt6c"><strong>Comment</strong> <br>
+                          (Optional)</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control">Enter your comment...</textarea>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default orngbtn lesbtn" data-dismiss="modal">Save</button>
+              <button type="button" class="btn btn-default orngbtn lesbtn" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mrgtp10p">
+      <div class="col-md-12 padsidenone">
+        <div class="panel panel-default bord-gry">
+          <div class="dash-panlhdng form-horizontal">
+            <div class="col-md-6 col-sm-6"> <small class="mrgtp5p smallgrytxt">
+              <input type="checkbox">
+              &nbsp;Select all stages till Approval</small></div>
+            <div class="col-md-6 col-sm-6 lesgryclr form-group form-group-sm text-rightresp padng-rgtnone">
+              <label class="control-label fnt12 fnt6c">View : &nbsp;</label>
+              <select class="form-control form-control-auto mrgt15p">
+                <option>Active Leases</option>
+              </select>
+              <label class="control-label fnt12 fnt6c">Prospect Type : &nbsp;</label>
+              <select class="form-control form-control-auto">
+                <option>All</option>
+              </select>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="col-md-12 padsidenone">
+              <div class="les-gren clearfix">
+                <div class="metro-blks"> <a href="#" data-toggle="modal" data-target="#enterexplan1">
+                  <p class="metro-titl">LEAD</p>
+                  <p class="metro-icon"><img src="images/leadicon.png" alt="" class="metro-iconblu"/><img src="images/leadicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="modal fade" id="enterexplan1" tabindex="-1">
+                  <div class="modal-dialog cust-modaldialog wdt30pr-resp">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close modal-closebtn" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title lesclr" id="myModalLabel">Pipeline Stage</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Properties</th>
+                                <th>Stage Count</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center">
+                                <td>Star Clox</td>
+                                <td>2</td>
+                              </tr>
+                              <tr class="text-center">
+                                <td>Spruce Plaza</td>
+                                <td>0</td>
+                              </tr>
+                              <tr class="text-center">
+                                <td>Bang Arc</td>
+                                <td>0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default orngbtn lesbtn" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">CONTACTED</p>
+                  <p class="metro-icon"><img src="images/contactedicon.png" alt="" class="metro-iconblu"/><img src="images/contactedicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">PROPOSAL</p>
+                  <p class="metro-icon"><img src="images/proposalicon.png" alt="" class="metro-iconblu"/><img src="images/proposalicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">NEGOTIATION</p>
+                  <p class="metro-icon"><img src="images/negotitnicon.png" alt="" class="metro-iconblu"/><img src="images/negotitnicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">PENDING <br>
+                    APPROVAL</p>
+                  <p class="metro-icon"><img src="images/pdapprovalicon.png" alt="" class="metro-iconblu"/><img src="images/pdapprovalicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">LEASE <br>
+                    PREPARATION</p>
+                  <p class="metro-icon"><img src="images/leaseprepicon.png" alt="" class="metro-iconblu"/><img src="images/leaseprepicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">PROPOSAL <br>
+                    ACCEPTED</p>
+                  <p class="metro-icon"><img src="images/propslaccptedicon.png" alt="" class="metro-iconblu"/><img src="images/propslaccptedicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">APPROVED</p>
+                  <p class="metro-icon"><img src="images/approvedicon.png" alt="" class="metro-iconblu"/><img src="images/approvedicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">EXECUTED</p>
+                  <p class="metro-icon"><img src="images/execicon.png" alt="" class="metro-iconblu"/><img src="images/execicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+                <div class="metro-blks"> <a href="#">
+                  <p class="metro-titl">DEAD DEALS</p>
+                  <p class="metro-icon"><img src="images/ddealsicon.png" alt="" class="metro-iconblu"/><img src="images/ddealsicon-hover.png" alt="" class="metro-iconwhte"/></p>
+                  <p class="metro-txt">0</p>
+                  </a> </div>
+              </div>
+            </div>
+            <div class="lespipetbl">
+              <div class="col-md-12 mrgtp15p padsidenone text-rightresp"><a href="#" data-toggle="dropdown" class="exprt exprt-bgno lesbg">Add Prospect</a></div>
+              <div class="col-md-12 mrgtp15p tabalgngen table-responsive">
+                <table class="table horzscroll" id="tblvrtcolfxscrol">
+                  <thead>
+                    <tr class="tablxscrl">
+                      <th><a href="#">Property Name</a></th>
+                      <th><a href="#">Tenant</a></th>
+                      <th><a href="#">Stage</a></th>
+                      <th><a href="#">Term</a></th>
+                      <th><a href="#">Suite</a></th>
+                      <th><a href="#">RSF</a></th>
+                      <th><a href="#">Custom Type</a></th>
+                      <th><a href="#">Suite</a></th>
+                      <th><a href="#">Action</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>
+                    <tr class="text-center tablxscrl">
+                      <td class="text-left"><a href="#">Star Clox</a></td>
+                      <td><a href="#">Climberwirt.com</a> <br>
+                        Renewal</td>
+                      <td><select class="form-control form-control-auto select-custm">
+                          <option>Negotiation</option>
+                        </select></td>
+                      <td>24</td>
+                      <td>1100, 301</td>
+                      <td>10,000 <br>
+                        <small>Original : 16,106</small></td>
+                      <td>annual increase</td>
+                      <td>annual increase</td>
+                      <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="Comment" data-container="body" class="cmntextbg mrgt10p">10</a><a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit" data-container="body" class="mrgt10p"><img src="images/edit.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Attach" data-container="body" class="mrgt10p"><img src="images/attach.png" alt=""/></a> <a href="#" data-toggle="tooltip" data-placement="bottom" title="Delete Permanently" data-container="body" class="mrgt10p"><img src="images/delete.png" alt=""/></a></td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>

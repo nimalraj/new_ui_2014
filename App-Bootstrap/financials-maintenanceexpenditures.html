@@ -1,0 +1,835 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Amp Technologies</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Common Custom -->
+<link href="css/ui-custom.css" rel="stylesheet">
+<!-- Module Specific Custom -->
+<link href="css/ui-app-financials.css" rel="stylesheet">
+<!-- Ui plugins -->
+<link href="css/fxdtable.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- UI custom js -->
+<script src="js/jquery.fixedheadertable.js"></script>
+<script src="js/ui-action.js"></script>
+</head>
+<body class="financialbdy">
+<!-- header -->
+<div class="container-fluid header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7"><img src="images/logo.png" alt=""/></div>
+      <div class="col-md-5 padng-rgtnone hdriconswrp">
+        <div class="headericons">
+          <div class="userlist">
+            <div class="listdisp"><a href="javascript:void(0)">Spinoso &nbsp;<img src="images/usrlistim.png" alt=""/></a></div>
+            <ul>
+              <li><a href="javascript:void(0)">Spinoso</a></li>
+              <li><a href="javascript:void(0)">K Williams</a></li>
+              <li><a href="javascript:void(0)">Swig</a></li>
+            </ul>
+          </div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Switch to Admin" data-container="body" class="blu-tooltip alrt"><img src="images/admin-icn.png" alt=""/></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Alerts" data-container="body" class="blu-tooltip alrt"><img src="images/warning-icn.png" alt=""/> <span>4</span></a></div>
+          <div class="cntnr"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Updates" data-container="body" class="blu-tooltip alrt"><img src="images/refresh-icn.png" alt=""/> <span>7</span></a></div>          
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"><img src="images/settings-icon.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">Basic</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Debt</a></li>
+              <li><a href="#">Users</a></li>
+              <li><a href="#">Variances</a></li>
+              <li><a href="#">Alerts</a></li>
+              <li><a href="#" class="bgno">Help</a></li>
+            </ul>
+          </div>
+          <div class="cntnr dropdown"><a href="#" class="drpdwn"> <img src="images/user-icn.png" alt=""/></a>
+            <ul class="dropdown-menu custm-menu setngsubmenu">
+              <li><a href="#">KWILLIAMS GEORGE</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Edit Profile</a></li>
+              <li><a href="#" class="bgno">LogOut</a></li>
+            </ul>
+          </div>        
+        </div>
+<div class="fnt13 pull-rightsm991p fnt6c fnt-trebcht"><span class="clrblue">Welcome</span> Vanessa Rogers</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav menu -->
+<div class="container-fluid menu-wrap">
+  <div class="container">
+    <div class="row head-menu text-center">
+      <div class="col-md-8">
+        <div class="col-md-2 dashboard dropdown"><a href="#"><i><img src="images/icon-dashboard.png" alt=""/></i>DASHBOARD</a>
+          <ul class="dropdown-menu dash-menu">
+            <li><a href="#">Financial Info</a></li>
+            <li><a href="#">Leasing Info</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Trends &amp; Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 financials dropdown"><a href="#" class="currnt"><i><img src="images/icon-financials.png" alt=""/></i>FINANCIALS</a>
+          <ul class="dropdown-menu financial-menu">
+            <li><a href="#">Operating Statement</a></li>
+            <li><a href="#">Cash Flow</a></li>
+            <li><a href="#">Receivables</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 leasing dropdown"><a href="#"><i><img src="images/icon-leasing.png" alt=""/></i>LEASING</a>
+          <ul class="dropdown-menu leasing-menu">
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Pipeline</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="#">Stacking</a></li>
+            <li><a href="#">Rent Roll</a></li>
+            <li><a href="#">Encumbrance</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 files dropdown"><a href="#"><i><img src="images/icon-files.png" alt=""/></i>FILES</a>
+          <ul class="dropdown-menu files-menu">
+            <li><a href="#">Other Files</a></li>
+            <li><a href="#">Deal Room</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 services dropdown"><a href="#"><i><img src="images/icon-services.png" alt=""/></i>SERVICES</a>
+          <ul class="dropdown-menu services-menu">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Calender</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 news"><a href="#"><i><img src="images/icon-news.png" alt=""/></i>NEWS</a></div>
+      </div>
+      <div class="col-md-4 selctportf">
+        <div class="row">
+          <div class="col-md-12 pdng7p padng-lefnone text-left selctportfarw"> <img src="images/tabprop.png" alt="" class="propbrdinim propbrd-thumb"/> <span>California 1<br>
+            3 Properties | 687,771 SF &nbsp;<img src="images/current.png" alt="" class="selctarw"/></span> </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown -->
+    <div class="row" id="megadropdown">
+      <div class="mgadrp"> 
+        <!-- Nav tabs -->
+        <div class="nav-tab-wrp">
+          <ul class="nav nav-tabs pull-left" role="tablist">
+            <a href="#" class="pull-right megadropclose"><img src="images/megaddclose.png" alt=""/></a>
+            <li class="active dropdown"><a href="#tab1" role="tab" data-toggle="tab">PORTFOLIOS</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#tab2" role="tab" data-toggle="tab">PROPERTIES</a>
+              <ul class="dropdown-menu mega-menu">
+                <li><a href="#">Properties 1</a></li>
+                <li><a href="#">Properties 2</a></li>
+                <li><a href="#">Properties 3</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <input type="text" class="form-control form-control-auto drpsearch">
+            <a href="javascript:void(0)" class="megadropclose"><img src="images/drpclose.png" alt=""/></a></div>
+        </div>
+        <div class="mgadrpin"> 
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="row mrgsidenone megahgtauto">
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="propbrd-mn">
+                  <div class="propbrd">
+                    <div class="propbrdin"> <img src="images/tabprop.png" alt="" class="propbrdinim"/>
+                      <div class="propbrdintxt">Bang Arc<br>
+                        <small>63,769 SF Office, <br>
+                        New York</small></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mega dropdown --> 
+  </div>
+</div>
+<!-- nav menu --> 
+<!-- header --> 
+<!-- dashboard content -->
+<div class="container-fluid">
+  <div class="container"> 
+    <!-- financials blocks-->
+    <div class="row padng-lefnone">
+      <div class="col-md-7 col-sm-7 col-xs-12 padng-lefnone finclr mrgtp5p">CAPITAL EXPENDITURES : YTD</div>
+      <div class="col-md-5 col-sm-5 col-xs-12 finclr form-horizontal">
+        <div class="form-group form-group-sm">
+          <div class="pull-right">
+            <label class="control-label pull-left">Values : &nbsp;</label>
+            <select class="form-control form-control-auto pull-left">
+              <option>Total SqFt</option>
+            </select>
+            <a href="#" class="exprt exprt-bgno">Print PDF</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mrgtpbt10p bord-gry">
+      <div class="col-md-3 bord-rgtgry pdng7p tab-pane fintplftab">
+        <div class="divcenteralgn fintplfcnt">
+          <div class="fintb"><a href="#ytd" role="tab" data-toggle="tab" class="active">YTD</a></div>
+          <div class="fintb"><a href="#month" role="tab" data-toggle="tab">Month</a></div>
+          <div class="fintb"><a href="#yrforecast" role="tab" data-toggle="tab">Yr Forecast</a></div>
+        </div>
+        <div class="form-horizontal mrgtp10p">
+          <select class="form-control">
+            <option>Quarterly</option>
+            <option>Year</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-9 pdng7p tab-content">
+        <div class="tab-pane active" id="ytd">
+          <div class="mrgtpbt12p divcenteralgn">
+            <div class="calarwlf"><a href="javascript:void(0)"><img src="images/fincalarw.png" alt=""/></a></div>
+            <div class="calgroup">
+              <ul class="caldr-icon">
+                <li><a href="#">Jan <br>
+                  2012</a></li>
+                <li><a href="#">Feb <br>
+                  2012</a></li>
+                <li><a href="#">Mar <br>
+                  2012</a></li>
+                <li><a href="#">Apr <br>
+                  2012</a></li>
+                <li><a href="#">May <br>
+                  2012</a></li>
+                <li><a href="#">Jun <br>
+                  2012</a></li>
+                <li><a href="#">Jul <br>
+                  2012</a></li>
+                <li><a href="#">Aug <br>
+                  2012</a></li>
+                <li><a href="#">Sep <br>
+                  2012</a></li>
+                <li><a href="#">Oct <br>
+                  2012</a></li>
+                <li><a href="#">Nov <br>
+                  2012</a></li>
+                <li><a href="#">Dec <br>
+                  2012</a></li>
+              </ul>
+              <ul class="caldr-icon">
+                <li><a href="#">Jan <br>
+                  2013</a></li>
+                <li><a href="#">Feb <br>
+                  2013</a></li>
+                <li><a href="#">Mar <br>
+                  2013</a></li>
+                <li><a href="#">Apr <br>
+                  2013</a></li>
+                <li><a href="#">May <br>
+                  2013</a></li>
+                <li><a href="#">Jun <br>
+                  2013</a></li>
+                <li><a href="#">Jul <br>
+                  2013</a></li>
+                <li><a href="#">Aug <br>
+                  2013</a></li>
+                <li><a href="#">Sep <br>
+                  2013</a></li>
+                <li><a href="#">Oct <br>
+                  2013</a></li>
+                <li><a href="#">Nov <br>
+                  2013</a></li>
+                <li><a href="#">Dec <br>
+                  2013</a></li>
+              </ul>
+              <ul class="caldr-icon" style="display: block;">
+                <li><a href="#">Jan <br>
+                  2014</a></li>
+                <li><a href="#">Feb <br>
+                  2014</a></li>
+                <li><a href="#">Mar <br>
+                  2014</a></li>
+                <li><a href="#">Apr <br>
+                  2014</a></li>
+                <li><a href="#">May <br>
+                  2014</a></li>
+                <li><a href="#">Jun <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Jul <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Aug <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Sep <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Oct <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Nov <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Dec <br>
+                  2014</a></li>
+              </ul>
+            </div>
+            <div class="calarwrgt"><a href="javascript:void(0)"><img src="images/fincalarwrgt.png" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="tab-pane" id="month">
+          <div class="mrgtpbt12p divcenteralgn">
+            <div class="calarwlf"><a href="javascript:void(0)"><img src="images/fincalarw.png" alt=""/></a></div>
+            <div class="calgroup">
+              <ul class="caldr-icon" style="display: block;">
+                <li><a href="#">Jan <br>
+                  2014</a></li>
+                <li><a href="#">Feb <br>
+                  2014</a></li>
+                <li><a href="#">Mar <br>
+                  2014</a></li>
+                <li><a href="#">Apr <br>
+                  2014</a></li>
+                <li><a href="#">May <br>
+                  2014</a></li>
+                <li><a href="#">Jun <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Jul <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Aug <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Sep <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Oct <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Nov <br>
+                  2014</a></li>
+                <li class="gry"><a href="#">Dec <br>
+                  2014</a></li>
+              </ul>
+            </div>
+            <div class="calarwrgt"><a href="javascript:void(0)"><img src="images/fincalarwrgt.png" alt=""/></a></div>
+          </div>
+        </div>
+        <div class="tab-pane" id="yrforecast">
+          <div class="mrgtpbt12p finlstb divcenteralgn">
+            <div class="calarwlf mrglfnone"><a href="javascript:void(0)"><img src="images/fincalarw.png" alt=""/></a></div>
+            <div class="calgroup wdtauto">
+              <ul class="caldr-icon cal-iconyr" style="display: block;">
+                <li><a href="#">2011</a></li>
+                <li><a href="#">2012</a></li>
+                <li><a href="#">2013</a></li>
+                <li><a href="#">2014</a></li>
+                <li><a href="#">2015</a></li>
+              </ul>
+            </div>
+            <div class="calarwrgt"><a href="javascript:void(0)"><img src="images/fincalarwrgt.png" alt=""/></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- financials blocks--> 
+    <!-- financials table-->
+    <div class="row mrgtp30p tabalgngen table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th class="minwdt100p"><span class="pull-left">0%</span> Actual $ <span class="pull-right">100%</span></th>
+            <th><a href="#">Budget $</a></th>
+            <th class="minwdt100p"><span class="pull-left">Var %</span> <span class="pull-right">Var $</span></th>
+            <th><a href="#">YTD Explanation</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-right">
+            <td class="text-left">Administration</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>15,265</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">9,736</span></td>
+            <td class="text-left">Explanation Text<br>
+              <a href="#" class="pull-right">More ...</a></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Grounds</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>49,159</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">34,392</span></td>
+            <td class="text-left"><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Maintenance General</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>7,236</span></div>
+              </div></td>
+            <td>33,756</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">26,520</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Marketing And Leasing</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgred clrblk"><span>1,008</span></div>
+              </div></td>
+            <td>600</td>
+            <td><span class="pull-left clred"><img src="images/red-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clred">408</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Administration</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>15,265</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">9,736</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Grounds</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>49,159</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">34,392</span></td>
+            <td class="text-left"><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Maintenance General</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>7,236</span></div>
+              </div></td>
+            <td>33,756</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">26,520</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Marketing And Leasing</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgred clrblk"><span>1,008</span></div>
+              </div></td>
+            <td>600</td>
+            <td><span class="pull-left clred"><img src="images/red-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clred">408</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Administration</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>15,265</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">9,736</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Grounds</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>49,159</span></div>
+              </div></td>
+            <td>25,000</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">34,392</span></td>
+            <td class="text-left"><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Maintenance General</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgreen clrblk"><span>7,236</span></div>
+              </div></td>
+            <td>33,756</td>
+            <td><span class="pull-left clrgreen"><img src="images/green-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clrgreen">26,520</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+          <tr class="text-right">
+            <td class="text-left">Marketing And Leasing</td>
+            <td><div class="alm-sclr-wrpgry">
+                <div class="alm-sclr-in alm-bgred clrblk"><span>1,008</span></div>
+              </div></td>
+            <td>600</td>
+            <td><span class="pull-left clred"><img src="images/red-arw-dw.png" alt="" width="9" height="9"/> 39 %</span> <span class="pull-right clred">408</span></td>
+            <td><textarea></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- financials table--> 
+  </div>
+</div>
+<!-- dashboard content --> 
+<!-- footer -->
+<div class="container-fluid footr">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 footrlf text-primary"><span class="text-muted">&copy; 2014. <a href="http://www.theamp.com/" target="_blank">AMP e- Technologies.</a></span> <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Contact us</a></div>
+      <div class="col-md-6 footrgt text-right"> <a href="#"><img src="images/geotrust.png" alt=""/></a> <a href="http://www.theamp.com/" target="_blank"><img src="images/amplogo-pwerd.png" alt=""/></a> </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+</body>
+</html>
